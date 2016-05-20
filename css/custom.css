@@ -2,7 +2,7 @@
 Navbar
 ***********************************/
 .navbar{
-  background-color: #F44336;
+  background-color: black;
 }
 
 
@@ -10,17 +10,17 @@ Navbar
 Jumbotron
 ***********************************/
 .jumbotron{
-  background-color:#9E9E9E; 
+  background-color:#2a3562; 
   color: white;
 }
 
 .jumbo-btn{
-  background-color: #F44336;
+  background-color: black;
   color: white;
 }
 
 .jumbo-btn:hover{
-  background-color: #F44336;
+  background-color: black;
   color: white;
 }
 
