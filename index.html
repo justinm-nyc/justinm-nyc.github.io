@@ -1,40 +1,150 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Justin Martinelli | Web Developer - Software Engineer</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link href='https://fonts.googleapis.com/css?family=Electrolize|Fjalla+One' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Justin Martinelli | Web Developer</title>
+    <!-- bootstrap css -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/custom.css">
   </head>
-  <body>
-    <header>
-      <a href="index.html" id="logo">
-        <h1>Justin Martinelli</h1>
-        <h2>Student | Web Developer | Software Engineer</h2>
-      </a>
-      <nav>
-        <ul>
-          <li><a href="index.html" class="selected">INTRODUCTION</a></li>
-          <li><a href="resume.html">RÉSUMÉ</a></li>
-          <li><a href="contact.html">CONTACT</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div id="introduction">
-    <section>
-       <h3>INTRODUCTION</h3>
-       <p> My name is Justin Martinelli and I'm pursuing a B.S. in Computer Science at the University Of Massachusetts Amherst.  Since helping people with their computer issues as a young child, to building and programming robots in high school, my passion for technology has only grown stronger.</p>
-       <p>   I want to create code that will elevate a company and I use Java as my main tool. Seeing my hard work manifest into reality is one of the things that makes me content in life. I love to have meaningful interactions with others and collaborate on ideas. I’m driven and have a passion for learning. Front end development is what most interests me. I have a thirst for learning and only seek to quench this thirst. I am looking to accumulate more skills and improve my already acquired ones by constantly working on new projects. </p>
-       <img src="img/JM_mlh.jpg" alt="Photograph of Justin Martinelli" class="profile-photo">
-    </section>
-      <footer>
-        <a href="https://www.linkedin.com/in/justin-martinelli-263b97a6"><img src="img/LinkedIn_Logo.png" alt="LinkedIn Logo" class = "social-icon"></a>
-        <a href="https://github.com/justinm-nyc"><img src="img/GitHub_Logo.png" alt="GitHub Logo" class = "social-icon"></a>
-        <p>&copy; 2016 Justin Martinelli.</p>
-      </footer>
-    </div>
+  <body id="home" data-spy="scroll" data-target=".navbar" data-offset="100">
+	
+		<!-- navbar -->
+		<nav class="navbar navbar-dark navbar-fixed-top">
+			<div class="container">
+				<ul class="nav navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="#info">INTRO <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#about">ABOUT</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#Projects">PROJECTS</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#Contact">CONTACT</a>
+					</li>
+				</ul>
+			</div>
+		</nav><!-- /navbar -->
+		
+		<!-- jumbotron -->
+		<div id="info" class="jumbotron jumbotron-fluid">
+			<div class="container text-sm-center p-t-3">
+				<h1 class="display-2">Justin Martinelli</h1>
+				<p class="lead">Web Developer</p>
+				
+				<div class="btn-group m-t-2" role="group" aria-label="Basic example">
+					<a class="btn btn-lg jumbo-btn" href="#Contact">Contact Now</a>
+					<a class="btn btn-secondary btn-lg" href="#Projects">See Projects</a>
+				</div>
+			</div>
+		</div>		
+		<!-- /jumbotron -->
+		
+		<div class="container p-t-2">
+			
+			<!-- about -->
+			<div id="about" class="row">
+				<div class="col-lg-8">
+          <h3 class="m-b-2 text-muted text-sm-center">ABOUT</h3>
+					<img class="m-b-1 img-fluid img-rounded hidden-xs-down" src="img/hamp_hack.jpg" alt="Justin at Hamp Hack">
+		      <p>Justin was always drawn to technology during his upbringing in Brooklyn, NY. Since helping people with their technical problems as a young child, to building and programming robots in high school, his passion for technology only continues to grow stronger.</p>
+		      <p>Justin loves to see his hard work manifest into excellent projects.  He loves to have meaningful interactions with others and collaborate on ideas. Justin is pursuing a B.S. in Computer Science at the University Of Massachusetts Amherst and will graduate in May of 2018. </p>
+				</div>
+				
+				<div class="col-lg-4">
+          <h3 class="m-b-2 text-muted text-sm-center">SKILLS</h3>
+					<div class="list-group">
+					  <a href="#" class="list-group-item"><strong>Programming Languages</strong>: Java, C, Ruby </a>
+					  <a href="#" class="list-group-item"><strong>Web Development</strong>: HTML5, CSS, JavaScript, NodeJS, JQuery, Bootstrap</a>
+					  <a href="#" class="list-group-item"><strong>Databases</strong>: MySQL</a>
+					</div>
+				</div>
+			</div><!-- /about -->
+			
+			<!-- Projects -->
+			<h1 id="Projects" class="display-4 text-xs-center m-y-3 text-muted">PROJECTS</h1>
+			
+			<div class="row">
+				<div class="col-md-6 col-lg-4">
+					<div class="card">
+					<a href="https://github.com/justinm-nyc/justinm-nyc.github.io">
+						<img class="card-img-top img-fluid" src="img/Justin_Personal_Site_HTML_CSS.png" alt="Card image cap">
+						</a>
+						<div class="card-block">
+							<h4 class="card-title text-xs-center">First Personal Webite</h4>
+							<p class="card-text">Justin made his first personal site using only HTML and CSS.  It consists of three separate pages including a home, about, and contact page.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-6 col-lg-4">
+				    <div class="card">
+				    <a href="https://github.com/WDoan/hci-final">
+				      <img class="card-img-top img-fluid" src="img/Mood_Tracker_Account_Home.png" alt="Card image cap">
+				      </a>
+				      <div class="card-block">
+				        <h4 class="card-title text-xs-center">Mood Tracker</h4>
+				        <p class="card-text">This MoodTracker was done as a group project using NodeJS for a Human Computer Interaction class Justin took in the spring of 2016.  The entire design process took several weeks and included storyboarding and prototyping. The website does not have any backend.  The website consists of several pages including a register page, account home page, add mode page, see data page, settings page, and more.</p>
+				      </div>
+				    </div>
+				</div>
+
+
+				<div class="col-md-6 col-lg-4">
+					<div class="card">
+						<img class="card-img-top img-fluid" src="img/Second_Personal_Site.png" alt="Card image cap">
+						<div class="card-block">
+							<h4 class="card-title text-xs-center">Second Personal Website</h4>
+							<p class="card-text">Justin made his second personal site using HTML and the front-end framework Bootsrap.  It is a single page website.</p>
+						</div>
+					</div>
+				</div>
+
+
+			</div><!-- /Projects -->
+			
+			<!-- Contact -->
+				<h1 id="Contact" class="display-4 text-xs-center m-y-3 text-muted">CONTACT</h1>
+
+			     <div class="col-md-6">
+			         <h3> GENERAL INFORMATION</h3>
+			         <p> I am currently looking for a summer internship opportunity.  If you have any questions, please don't hesitate to contact me!</p>
+			         <p>Email and phone are the best way to reach me</p>
+			     </div>
+
+			     <div class="col-md-3"></div>
+
+			     <div class="col-md-3 contact-info">
+			         <h3>CONTACT DETAILS</h3>
+			         <ul class="contact-info">
+			           <li class="phone"><a href="tel:7187576212">(718)7576212</a></li>
+			           <li class="email"><a href="mailto:justinmartinelli1@gmail.com">justinmartinelli1@gmail.com</a></li>
+			           <li class="linkedin"><a href="https://www.linkedin.com/in/justin-martinelli-263b97a6">LinkedIn</a></li>
+			           <li class="gitHub"><a href="https://github.com/justinm-nyc">GitHub</a></li>         
+			         </ul>
+			     </div>
+
+			<!-- /Contact -->
+		
+			<!-- footer -->
+			<div class="footer">
+				<div class="col-lg-3 text-xs-center"></div>
+				<div class="col-lg-6 text-xs-center">
+			        <p>&copy; 2016 Justin Martinelli.</p>
+				</div>
+				<div class="col-lg-3 text-xs-center"></div>	
+			</div>		
+			<!-- /footer -->
+			
+		</div><!-- /.container -->
+		
+    <!-- jQuery first, then bootstrap js -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
   </body>
 </html>
