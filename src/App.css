@@ -13,8 +13,8 @@
   }
 }
 
-.App-header {
-  background-color: white;
+.content {
+  background-color: #009FB7;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -48,6 +48,24 @@
   color: black;
 }
 
-.navbar-light .navbar-nav .nav-link {
-  color:black;
+#nav-button {
+  color: black;
 }
+
+
+#nav-button:hover {
+  color: #009FB7;
+}
+
+
+/** About Me **/
+.about-div {
+  padding-top: 20px;
+}
+
+.icon-pic {
+  max-width: 75%;
+}
+
+
+/** Animations **/
