@@ -7,15 +7,17 @@ class Home extends Component {
     render() {
         return (
             <div>
-                <div className="home-div">
-                    <Col>
-                        <h1 >Hi, I'm Justin.</h1>
-                        <h5 className="home-pt-2">I'm a software engineer with experience designing and building user interfaces for web and mobile applications. </h5>
-                        <h5>Want to collaborate? Let's chat.</h5>
-                    </Col>
-                    <Col>
-                        <Image className="arrow-button" src={arrowButton} alt="" width="32" height="32" title="Bootstrap"/>
-                    </Col>
+                <div className="content">
+                    <div>
+                        <Col>
+                            <h1>Hi, I'm Justin.</h1>
+                            <h5 className="home-pt-2">I'm a software engineer with experience designing and building user interfaces for web and mobile applications. </h5>
+                            <h5>Want to collaborate? Let's chat.</h5>
+                        </Col>
+                        <Col className="arrow-column">
+                            <Image className="arrow-button" src={arrowButton} alt="" width="32" height="32" title="Bootstrap"/>
+                        </Col>
+                    </div>
                 </div>
                 <div className="work-div">
                     <Col>

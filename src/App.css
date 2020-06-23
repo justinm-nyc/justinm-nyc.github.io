@@ -47,7 +47,6 @@
 /** Home **/
 .home-pt-2{
 margin: 50px 0 50px 0;
-
 }
 
 @keyframes bounce { 
@@ -58,4 +57,8 @@ margin: 50px 0 50px 0;
   animation: bounce 0.8s;
   animation-direction: alternate;
   animation-iteration-count: infinite;
+}
+
+.arrow-column{
+  margin-top: 200px;
 }

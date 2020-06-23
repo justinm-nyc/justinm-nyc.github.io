@@ -6,13 +6,15 @@ import thumbnailPic from './images/justin-m-icon-pic.jpg';
 class About extends Component {
     render() {
         return (
-            <div className="about-div">
-                <Col>
-                    <Image className="icon-pic" src={thumbnailPic} roundedCircle />
-                </Col>
-                <Col>
-                    <h1 className="">JUSTIN MARTINELLI</h1>
-                </Col>
+            <div className="content">
+                <div className="about-div">
+                    <Col>
+                        <Image className="icon-pic" src={thumbnailPic} roundedCircle />
+                    </Col>
+                    <Col>
+                        <h1 className="">JUSTIN MARTINELLI</h1>
+                    </Col>
+                </div>
             </div>
         );
     }

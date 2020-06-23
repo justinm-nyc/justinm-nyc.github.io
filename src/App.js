@@ -13,7 +13,7 @@ function App() {
         <header className="App-header">
           <CustomNavbar></CustomNavbar>
         </header>
-        <div className="content">
+        <div className="">
           <Switch>
             <Route exact path="/">
               <Home />
