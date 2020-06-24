@@ -3,7 +3,7 @@ import CustomNavbar from './navbar.js';
 import About from './about.js';
 import Contact from './contact.js';
 import Home from './home.js';
-import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import './App.css';
 
 function App() {
