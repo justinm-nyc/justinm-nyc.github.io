@@ -75,3 +75,17 @@ margin: 50px 0 50px 0;
 .projects {
   text-align: left;
 }
+
+.project-name{
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.project-details-col{
+  padding-left: 0px;
+}
+
+.title-description{
+  font-size: 1.25rem;
+  font-weight: 300;
+}

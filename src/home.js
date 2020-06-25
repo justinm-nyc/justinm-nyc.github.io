@@ -4,6 +4,7 @@ import Image from 'react-bootstrap/Image';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Container from 'react-bootstrap/Container';
 import arrowButton from './images/arrow-down-circle.svg';
+import tempSiteImage from './images/tempSiteImage.png';
 
 class Home extends Component {
     render() {
@@ -22,12 +23,12 @@ class Home extends Component {
                     </div>
                 </div>
                 <div id="work" className="work-content">
-                    <div >
+                    <Container fluid>
                         <Col>
-                            <h1 >WORK.</h1>
+                            <h1 >WORK </h1>
                         </Col>
-                        <Projects></Projects>
-                    </div>
+                    </Container>
+                    <Projects></Projects>
                 </div>
             </div>
         );
@@ -40,21 +41,21 @@ class Projects extends Component {
     render(){
     const Projects =[
         { 
-            name: 'afsdfasdfas',
-            position: 'Software Engineer',
+            name: 'High Performance Autonomous Transaction Processing Simulator',
+            position: 'Full Stack Engineer',
             picture: 'fasfsaf',
             link: '/thisproject'
             
         },
         { 
-            name: 'name2',
-            position: 'Software Engineer',
+            name: 'Scientific Imaging Software ',
+            position: 'Full Stack Engineer',
             picture: 'fasfsaf',
             link: '/thisproject'
             
         },
                 { 
-            name: 'name3',
+            name: 'Jeapardy Helper',
             position: 'Software Engineer',
             picture: 'fasfsaf',
             link: '/thisproject'
@@ -62,20 +63,30 @@ class Projects extends Component {
         }
     ]
     return (
-      <div>
+      <Container fluid>
         {Projects.map((value, index) => {
-          return <Col className="projects ">
+          return  <div className="projects">
+
+            <Col md={{ span: 8, offset: 2 }}>
             <Jumbotron fluid className="p-md-5 rounded">
                 <Container>
-                    <h1>{value.name}</h1>
-                    <h5>
-                    {value.position}
-                    </h5>
+                    <row>
+                        <Col className="project-details-col" sm={8}>
+                            <h1 className="project-name">{value.name}</h1>
+                            <p className="title-description">{value.position}</p>
+                        </Col>
+                        <Col sm={4}>
+                            <Image fluid className="" src={tempSiteImage} alt="" title="Bootstrap"/>
+
+                        </Col>
+                    </row>
                 </Container>
             </Jumbotron>
-        </Col>
+
+            </Col>
+        </div>
         })}
-      </div>
+      </Container>
     )
     }
   };
