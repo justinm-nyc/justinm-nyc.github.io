@@ -3,8 +3,9 @@ import CustomNavbar from './navbar.js';
 import About from './about.js';
 import Contact from './contact.js';
 import Home from './home.js';
+import Project from './project.js';
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
-import './App.css';
+import './css/App.css';
 
 function App() {
   return (
@@ -23,6 +24,10 @@ function App() {
             </Route>
             <Route path="/contact">
               <Contact />
+            </Route>
+            {/* change below to individual projects */}
+            <Route path="/project">
+              <Project />
             </Route>
           </Switch>
         </div>

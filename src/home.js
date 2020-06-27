@@ -1,5 +1,6 @@
 import React,  { Component } from 'react';
 import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
 import Image from 'react-bootstrap/Image';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Container from 'react-bootstrap/Container';
@@ -24,9 +25,11 @@ class Home extends Component {
                 </div>
                 <div id="work" className="work-content">
                     <Container fluid>
-                        <Col>
-                            <h1 >WORK </h1>
+                    <Row className="justify-content-md-center">
+                        <Col lg={6}>
+                            <h1 className="work-title border-bottom pb-3 mb-4">Work </h1>
                         </Col>
+                        </Row>
                     </Container>
                     <Projects></Projects>
                 </div>
@@ -70,16 +73,18 @@ class Projects extends Component {
             <Col md={{ span: 8, offset: 2 }}>
             <Jumbotron fluid className="p-md-5 rounded">
                 <Container>
-                    <row>
-                        <Col className="project-details-col" sm={8}>
-                            <h1 className="project-name">{value.name}</h1>
-                            <p className="title-description">{value.position}</p>
+                    <Row>
+                        <Col className="project-details-col" lg={8}>
+                            <a href={value.link}>
+                                <h1 className="project-name">{value.name}</h1> 
+                            </a>
+                            <p className="title-description"> {value.position}</p>
+                            <a href={value.link}>Learn more</a>
                         </Col>
-                        <Col sm={4}>
+                        <Col lg={4}>
                             <Image fluid className="" src={tempSiteImage} alt="" title="Bootstrap"/>
-
                         </Col>
-                    </row>
+                    </Row>
                 </Container>
             </Jumbotron>
 
