@@ -79,11 +79,11 @@ class Projects extends Component {
                             <a href={value.link}>
                                 <h1 className="project-name">{value.name}</h1> 
                             </a>
-                            <p className="title-description"> {value.position}</p>
+                            <p className="title-description">{value.position}</p>
                             <a href={value.link}>Learn more</a>
                         </Col>
                         <Col lg={4}>
-                            <Image fluid className="" src={value.picture} alt="" title="Bootstrap"/>
+                            <Image fluid className="image-border" src={value.picture} alt="" title="Bootstrap"/>
                         </Col>
                     </Row>
                 </Container>
