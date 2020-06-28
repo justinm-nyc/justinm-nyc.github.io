@@ -6,6 +6,7 @@ import Jumbotron from 'react-bootstrap/Jumbotron';
 import Container from 'react-bootstrap/Container';
 import arrowButton from './images/arrow-down-circle.svg';
 import scientificImagingSoftwareImage from './images/scientific-imaging-screenshots/screenshot1.png';
+import hptaProcesingSimulatorImage from './images/hpat-processing-simulator-screenshots/screenshot1.png';
 
 class Home extends Component {
     render() {
@@ -46,7 +47,7 @@ class Projects extends Component {
         { 
             name: 'High Performance Autonomous Transaction Processing Simulator',
             position: 'Full Stack Engineer',
-            picture: 'fsadfas',
+            picture: hptaProcesingSimulatorImage,
             link: '/HPAT-processing-simulator'
             
         },

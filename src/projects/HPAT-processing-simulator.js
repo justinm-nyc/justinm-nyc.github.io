@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import Project from '../project.js';
-import screenshot1 from '../images/scientific-imaging-screenshots/screenshot1.png';
-import screenshot2 from '../images/scientific-imaging-screenshots/screenshot2.png';
-import screenshot3 from '../images/scientific-imaging-screenshots/screenshot3.png';
-import screenshot4 from '../images/scientific-imaging-screenshots/screenshot4.png';
+import screenshot1 from '../images/hpat-processing-simulator-screenshots/screenshot1.png';
+import screenshot2 from '../images/hpat-processing-simulator-screenshots/screenshot2.png';
+import screenshot3 from '../images/hpat-processing-simulator-screenshots/screenshot3.png';
+import screenshot4 from '../images/hpat-processing-simulator-screenshots/screenshot4.png';
 
 class HPATProcessingSimulator extends Component {
 
