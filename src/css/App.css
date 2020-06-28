@@ -110,3 +110,7 @@ margin: 50px 0 50px 0;
 .carousel-control-prev {
     filter: invert(100%);
 }
+
+div {
+  white-space: pre-wrap;
+} 
