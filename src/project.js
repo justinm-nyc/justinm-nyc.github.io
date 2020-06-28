@@ -1,8 +1,12 @@
-import React, { Component } from 'react';
+import React, { Component, useContext } from 'react';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
 import Carousel from 'react-bootstrap/Carousel'
+import Accordion from 'react-bootstrap/Accordion'
+import AccordionContext from 'react-bootstrap/AccordionContext';
+import {useAccordionToggle} from 'react-bootstrap/AccordionToggle';
+import Button from 'react-bootstrap/Button'
 import Image from 'react-bootstrap/Image';
 import screenshot1 from './images/scientific-imaging-screenshots/screenshot1.png'
 import screenshot2 from './images/scientific-imaging-screenshots/screenshot2.png'
@@ -83,18 +87,31 @@ class Project extends Component {
                         <Row>
                             <Col className="project-details-col" lg={6}>
                                 <h1 className="project-name">Description</h1> 
-                                <p className="title-description"> The Scientific Imaging Software utilizes Oracle Blockchain Cloud Service and Object Storage to automatically upload and track data streamed from laboratory equipment. <br></br> <br></br>
-
-In the scientific industry, laboratories face many challenges involving data integrity, data access, and data tracking. As a chief technology officer for a scientific laboratory, you need to understand who has access to your data, information on where that data has been accessed, and that data all needs to be auditable. Using the blockchain cloud service, an immutable ledger, you can permit access to that data and allow other people to come and audit that data directly. <br></br> <br></br>
-
-After taking an image of a slide with the USB microscope, that information is stored in object storage and a record of that image is going to be placed onto the blockchain. Then we use a web interface to view the information on the blockchain, update that blockchain and get a full and detailed history of everything that is stored on the blockchain. <br></br> <br></br>
-
-The image that was captured is then populated on the interface, it can be downloaded for analysis, and the analysis document can then be uploaded using the interface. All these events like downloading and uploading are saved to the blockchain, thus when you click the 'View History' button, you can see a table populated with the document's history from the blockchain. The Oracle Blockchain Cloud Service is used to store all data that is generated, all analysis and report documents, and a history of the data that is accessed. Oracle Object Storage is utilized to store and persist the data. The Oracle Scientific Imaging interface shows us how we can use blockchain to maintain a secure distributed ledger that provides value across the business from data collection, tracking, to auditing. </p>
+                                <p className="title-description"> The Scientific Imaging Software utilizes Oracle Blockchain Cloud Service and Object Storage to automatically upload and track data streamed from laboratory equipment. <br></br> <br></br> </p>
+                                <Accordion>
+                                    <ContextAwareToggle eventKey="0"></ContextAwareToggle>
+                                    <Accordion.Collapse eventKey="0">
+                                        <p>In the scientific industry, laboratories face many challenges involving data integrity, data access, and data tracking. As a chief technology officer for a scientific laboratory, you need to understand who has access to your data, information on where that data has been accessed, and that data all needs to be auditable. Using the blockchain cloud service, an immutable ledger, you can permit access to that data and allow other people to come and audit that data directly. <br></br> <br></br> After taking an image of a slide with the USB microscope, that information is stored in object storage and a record of that image is going to be placed onto the blockchain. Then we use a web interface to view the information on the blockchain, update that blockchain and get a full and detailed history of everything that is stored on the blockchain. <br></br> <br></br> The image that was captured is then populated on the interface, it can be downloaded for analysis, and the analysis document can then be uploaded using the interface. All these events like downloading and uploading are saved to the blockchain, thus when you click the 'View History' button, you can see a table populated with the document's history from the blockchain. The Oracle Blockchain Cloud Service is used to store all data that is generated, all analysis and report documents, and a history of the data that is accessed. Oracle Object Storage is utilized to store and persist the data. The Oracle Scientific Imaging interface shows us how we can use blockchain to maintain a secure distributed ledger that provides value across the business from data collection, tracking, to auditing.</p>
+                                    </Accordion.Collapse>
+                                </Accordion>
                             </Col>
                             <Col className="project-details-col" lg={6}>
-                                <h1 className="project-name">My Role</h1> 
-                                <p className="title-description"> Software Engineer </p>
-                                <h1 className="project-name">Technologies</h1> 
+                                <h1 className="project-name">Role</h1> 
+                                <p className="title-description"> Full Stack Engineer <br></br> <br></br> I created the frontend of the application, created the REST API to get and put information on the blockchain, created the API to store documents and retrieve documents from object storage, and wrote chaincode for the blockchain in go.</p>
+                                <h1 className="project-name">Technologies</h1>
+                                <ul>
+                                    <li>Vue</li>
+                                    <li>Node</li>
+                                    <li>Express</li>
+                                    <li>HTML5</li>
+                                    <li>CSS3</li>
+                                    <li>Bootstrap</li>
+                                    <li>Go</li>
+                                    <li>Docker</li>
+                                    <li>Kubernetes</li>
+                                    <li>Oracle Blockchain Cloud Service</li>
+                                    <li>Oracle Object Storage</li>
+                                </ul>
                             </Col>
                         </Row>
                     </Container>
@@ -108,3 +125,30 @@ The image that was captured is then populated on the interface, it can be downlo
 }
 
 export default Project;
+
+function ContextAwareToggle({ children, eventKey, callback }) {
+    const currentEventKey = useContext(AccordionContext);
+  
+    const decoratedOnClick = useAccordionToggle(
+      eventKey,
+      () => callback && callback(eventKey),
+    );
+
+    const isCurrentEventKey = currentEventKey === eventKey;
+    
+    return (
+        <div>
+            {isCurrentEventKey ? (
+                <Button
+                onClick={decoratedOnClick}>
+                Hide full description
+                </Button>
+            ) : (
+                <Button
+                onClick={decoratedOnClick}>
+                Read full description
+                </Button>
+            )}
+        </div>
+        );
+      }
