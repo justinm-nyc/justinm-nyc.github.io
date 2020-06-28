@@ -3,8 +3,9 @@ import CustomNavbar from './navbar.js';
 import About from './about.js';
 import Contact from './contact.js';
 import Home from './home.js';
-import Project from './project.js';
 import ScientificImagingSoftware from './projects/scientific-imaging-software.js';
+import HPATProcessingSimulator from './projects/HPAT-processing-simulator.js';
+import JeopardyHelper from './projects/jeopardy-helper.js';
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import './css/App.css';
 
@@ -29,9 +30,11 @@ function App() {
             <Route path="/scientific-imaging-software">
               <ScientificImagingSoftware />
             </Route>
-            {/* change below to individual projects */}
-            <Route path="/project">
-              <Project />
+            <Route path="/HPAT-processing-simulator">
+              <HPATProcessingSimulator />
+            </Route>
+            <Route path="/jeopardy-helper">
+              <JeopardyHelper />
             </Route>
           </Switch>
         </div>

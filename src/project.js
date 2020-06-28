@@ -7,10 +7,6 @@ import Accordion from 'react-bootstrap/Accordion';
 import AccordionContext from 'react-bootstrap/AccordionContext';
 import {useAccordionToggle} from 'react-bootstrap/AccordionToggle';
 import Button from 'react-bootstrap/Button';
-import screenshot1 from './images/scientific-imaging-screenshots/screenshot1.png';
-import screenshot2 from './images/scientific-imaging-screenshots/screenshot2.png';
-import screenshot3 from './images/scientific-imaging-screenshots/screenshot3.png';
-import screenshot4 from './images/scientific-imaging-screenshots/screenshot4.png';
 
 class Project extends Component {
     
@@ -18,7 +14,6 @@ class Project extends Component {
 
         return (
         <div>
-
         <Container fluid>
             <div>
                 <Container fluid>
@@ -32,36 +27,7 @@ class Project extends Component {
             <div className="projects">
                 <Col md={{ span: 8, offset: 2 }}>
                     <Container className="mb-4 pb-3">
-                        <Carousel>
-                            <Carousel.Item>
-                                <img
-                                className="d-block w-100"
-                                src={screenshot1}
-                                alt="First slide"
-                                />
-                            </Carousel.Item>
-                            <Carousel.Item>
-                                <img
-                                className="d-block w-100"
-                                src={screenshot2}
-                                alt="Third slide"
-                                />
-                            </Carousel.Item>
-                            <Carousel.Item>
-                                <img
-                                className="d-block w-100"
-                                src={screenshot3}
-                                alt="Third slide"
-                                />
-                            </Carousel.Item>
-                            <Carousel.Item>
-                                <img
-                                className="d-block w-100"
-                                src={screenshot4}
-                                alt="Fourth slide"
-                                />
-                            </Carousel.Item>
-                            </Carousel>
+                    <CarouselImages images={this.props.valueFromParent[5]}></CarouselImages>
                     </Container>
                 </Col>
                 <Col md={{ span: 8, offset: 2 }}>
@@ -130,5 +96,21 @@ function TechnologiesList({technologies}){
                     
     return (
         <ul>{ techList }</ul>
+    )
+}
+
+function CarouselImages({images}){
+    var imageList = images.map(function(image){
+                    return <Carousel.Item>
+                    <img
+                    className="d-block w-100"
+                    src={image}
+                    alt="Slide"
+                    />
+                </Carousel.Item>
+                    })
+                    
+    return (
+        <Carousel>{ imageList } </Carousel>
     )
 }
