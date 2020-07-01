@@ -19,7 +19,7 @@ class Project extends Component {
                 <Container fluid>
                         <Row className="justify-content-md-center">
                             <Col lg={6}>
-                                <h1 className="work-title border-bottom pb-3 mb-4">{this.props.valueFromParent[0]}</h1>
+                               <h1 className="work-title border-bottom pb-3 mb-4">{this.props.valueFromParent[0]}</h1>
                             </Col>
                         </Row>
                 </Container>
@@ -35,16 +35,16 @@ class Project extends Component {
                         <Row>
                             <Col className="project-details-col" lg={6}>
                                 <h1 className="project-name">Description</h1> 
-                                <p className="title-description">{this.props.valueFromParent[1]}</p>
+                                <p>{this.props.valueFromParent[1]}</p>
                                 <Accordion>
                                     <ContextAwareToggle eventKey="0"></ContextAwareToggle>
-                                    <Accordion.Collapse eventKey="0"><p>{this.props.valueFromParent[2]}</p>
+                                    <Accordion.Collapse  eventKey="0"><p>{this.props.valueFromParent[2]}</p>
                                     </Accordion.Collapse>
                                 </Accordion>
                             </Col>
                             <Col className="project-details-col" lg={6}>
                                 <h1 className="project-name">Role</h1> 
-                                <p className="title-description">{this.props.valueFromParent[3]}</p>
+                                <p>{this.props.valueFromParent[3]}</p>
                                 <h1 className="project-name">Technologies</h1>
                                 <TechnologiesList technologies={this.props.valueFromParent[4]}></TechnologiesList>
                             </Col>
@@ -72,7 +72,7 @@ function ContextAwareToggle({ children, eventKey, callback }) {
     const isCurrentEventKey = currentEventKey === eventKey;
     
     return (
-        <div>
+        <div className="expand-button">
             {isCurrentEventKey ? (
                 <Button
                 onClick={decoratedOnClick}>

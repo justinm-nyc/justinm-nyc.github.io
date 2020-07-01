@@ -102,6 +102,28 @@ margin: 50px 0 50px 0;
   text-align: left;
 }
 
+.expand-button Button{
+  margin-bottom: 16px;
+  background-color: #009FB7;
+  border-color: #009FB7;
+}
+
+.expand-button Button:hover{
+  background-color: #006f80;
+  border-color: #006f80;
+}
+
+.expand-button Button:focus{
+  background-color: #009FB7;
+  border-color: #009FB7;
+}
+
+/* .expand-button:hover,:active {
+  background-color: #009FB7;
+  border-color: #009FB7;
+} */
+
+
 .projects h1{
   font-weight: 300;
   line-height: 1.2;
@@ -114,6 +136,7 @@ margin: 50px 0 50px 0;
 
 .project-details-col{
   padding-left: 0px;
+  font-weight: 300;
 }
 
 .project-details-col a{
