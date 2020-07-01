@@ -13,7 +13,7 @@ class CustomNavbar extends Component {
 
                     </Nav>
                     <Nav>
-                        <Nav.Link className="nav-button" id="nav-button" href="#work">WORK</Nav.Link>
+                        <Nav.Link className="nav-button" id="nav-button" href="/#work">WORK</Nav.Link>
                         <Nav.Link className="nav-button" id="nav-button" href="about">ABOUT</Nav.Link>
                         <Nav.Link className="nav-button" id="nav-button" href="resume">RESUME</Nav.Link>
                         <Nav.Link className="nav-button" id="nav-button" href="contact">CONTACT</Nav.Link>
