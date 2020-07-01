@@ -16,8 +16,8 @@ class Home extends Component {
                     <div>
                         <Col>
                             <h1>Hi, I'm Justin.</h1>
-                            <h5 className="home-pt-2">I'm a software engineer with experience designing and building user interfaces for web and mobile applications. </h5>
-                            <h5>Want to collaborate? Let's chat.</h5>
+                            <h4 className="home-pt-2">I'm a software engineer with experience designing and building user interfaces for web and mobile applications. </h4>
+                            <h4>Want to collaborate? Let's chat</h4>
                         </Col>
                         <Col className="arrow-column">
                             <Image className="arrow-button" src={arrowButton} alt="" width="32" height="32" title="Bootstrap"/>
@@ -28,7 +28,7 @@ class Home extends Component {
                     <Container fluid>
                     <Row className="justify-content-md-center">
                         <Col lg={6}>
-                            <h1 className="work-title border-bottom pb-3 mb-4">Work </h1>
+                            <h1 className="work-title border-bottom pb-3 mb-4">WORK</h1>
                         </Col>
                         </Row>
                     </Container>
@@ -76,10 +76,10 @@ class Projects extends Component {
                 <Container>
                     <Row>
                         <Col className="project-details-col" lg={8}>
-                            <a href={value.link}>
-                                <h1 className="project-name">{value.name}</h1> 
+                            <a className="project-name" href={value.link}>
+                                <h1>{value.name}</h1> 
                             </a>
-                            <p className="title-description">{value.position}</p>
+                            <h5 className="title-description">{value.position}</h5>
                             <a href={value.link}>Learn more</a>
                         </Col>
                         <Col lg={4}>

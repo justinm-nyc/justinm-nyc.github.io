@@ -10,6 +10,8 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+  font-weight: 300;
+  line-height: 48px;
   color: white;
 }
 
@@ -49,6 +51,11 @@
 margin: 50px 0 50px 0;
 }
 
+.content h4{
+  font-weight: 300;
+}
+
+
 @keyframes bounce { 
   0% { transform: translateY(0); }
   100% { transform: translateY(-50px); }
@@ -69,11 +76,11 @@ margin: 50px 0 50px 0;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
 }
 
 .work-title{
   padding-top: 50px;
+  font-weight: 300;
 }
 
 .border-bottom {
@@ -95,18 +102,27 @@ margin: 50px 0 50px 0;
   text-align: left;
 }
 
-.project-name{
+.projects h1{
   font-weight: 300;
   line-height: 1.2;
   color: black;
+}
+
+.project-name:hover{
+  color:black;
 }
 
 .project-details-col{
   padding-left: 0px;
 }
 
-.title-description{
+.project-details-col a{
   font-size: 1.25rem;
+  font-weight: 300;
+
+}
+
+.title-description{
   font-weight: 300;
 }
 
