@@ -20,6 +20,7 @@ class Home extends Component {
                             <h4>Want to collaborate? Let's chat</h4>
                         </Col>
                         <Col className="arrow-column">
+                        <h4>Check out some of my work below</h4>
                             <Image className="arrow-button" src={arrowButton} alt="" width="32" height="32" title="Bootstrap"/>
                         </Col>
                     </div>

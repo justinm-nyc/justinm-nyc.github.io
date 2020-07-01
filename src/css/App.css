@@ -67,7 +67,11 @@ margin: 50px 0 50px 0;
 }
 
 .arrow-column{
-  margin-top: 200px;
+  margin-top: 250px;
+}
+
+.arrow-column h4{
+  padding-bottom: 50px;
 }
 
 .work-content {
@@ -113,10 +117,13 @@ margin: 50px 0 50px 0;
   border-color: #006f80;
 }
 
-.expand-button Button:focus{
+.expand-button Button:focus,
+.expand-button Button:active
+{
   background-color: #009FB7;
   border-color: #009FB7;
 }
+
 
 .projects h1{
   font-weight: 300;
@@ -153,21 +160,46 @@ div {
 } 
 
 /**Contact**/
+.contact-div{
+  background-color: #009FB7;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 48px;
+  color: white;
+}
+
+.contact-row{
+  padding-top: 100px;
+}
+
+.contact-inner-div{
+  margin: 0 auto;
+}
+
+.contact-title{
+  padding-top: 50px;
+}
+
 .contact-info {
   list-style: none;
+  text-align: left;
 }
 
 .contact-info li.linkedin a {
-  background-image: url(../images/iconmonstr-linkedin-3.svg);
+  background-image: url(../images/contact-icons/iconmonstr-linkedin-3.svg);
 }
 .contact-info li.phone a {
-  background-image: url(../images/telephone.svg);
+  background-image: url(../images/contact-icons/telephone.svg);
 }
 .contact-info li.email a {
-  background-image: url(../images/envelope.svg);
+  background-image: url(../images/contact-icons/envelope.svg);
 }
 .contact-info li.github a {
-  background-image: url(../images/GitHub-Mark-64px.png);
+  background-image: url(../images/contact-icons/GitHub-Mark-64px.png);
 }
 
 .contact-info a {
