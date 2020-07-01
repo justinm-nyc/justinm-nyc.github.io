@@ -118,12 +118,6 @@ margin: 50px 0 50px 0;
   border-color: #009FB7;
 }
 
-/* .expand-button:hover,:active {
-  background-color: #009FB7;
-  border-color: #009FB7;
-} */
-
-
 .projects h1{
   font-weight: 300;
   line-height: 1.2;
@@ -157,3 +151,31 @@ margin: 50px 0 50px 0;
 div {
   white-space: pre-wrap;
 } 
+
+/**Contact**/
+.contact-info {
+  list-style: none;
+}
+
+.contact-info li.linkedin a {
+  background-image: url(../images/iconmonstr-linkedin-3.svg);
+}
+.contact-info li.phone a {
+  background-image: url(../images/telephone.svg);
+}
+.contact-info li.email a {
+  background-image: url(../images/envelope.svg);
+}
+.contact-info li.github a {
+  background-image: url(../images/GitHub-Mark-64px.png);
+}
+
+.contact-info a {
+  display: block;
+  min-height: 40px;
+  background-repeat: no-repeat;
+  background-size: 40px 40px;
+  padding: 0 0 0 60px;
+  margin: 0 0 10px;
+  color: white;
+}
