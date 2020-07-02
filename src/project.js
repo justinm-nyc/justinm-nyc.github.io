@@ -76,12 +76,12 @@ function ContextAwareToggle({ children, eventKey, callback }) {
             {isCurrentEventKey ? (
                 <Button
                 onClick={decoratedOnClick}>
-                Hide full description
+                Hide Full Description
                 </Button>
             ) : (
                 <Button
                 onClick={decoratedOnClick}>
-                Read full description
+                Read Full Description
                 </Button>
             )}
         </div>

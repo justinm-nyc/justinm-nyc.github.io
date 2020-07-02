@@ -3,5 +3,4 @@ TODO:
 -gitHub links
 -About
 -Contact Me Button on Home
--Resume
 -ReOrganization of files

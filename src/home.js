@@ -4,6 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Image from 'react-bootstrap/Image';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Container from 'react-bootstrap/Container';
+import Button from 'react-bootstrap/Button';
 import arrowButton from './images/arrow-down-circle.svg';
 import scientificImagingSoftwareImage from './images/scientific-imaging-screenshots/screenshot1.png';
 import hptaProcesingSimulatorImage from './images/hpat-processing-simulator-screenshots/screenshot1.png';
@@ -14,10 +15,11 @@ class Home extends Component {
             <div>
                 <div className="content">
                     <div>
-                        <Col>
+                        <Col className="intro-column">
                             <h1>Hi, I'm Justin.</h1>
                             <h4 className="home-pt-2">I'm a software engineer with experience designing and building user interfaces for web and mobile applications. </h4>
                             <h4>Want to collaborate? Let's chat</h4>
+                            <a href="/contact"><Button className="contact-me-button">Contact Me</Button></a>
                         </Col>
                         <Col className="arrow-column">
                             <h4>Check out some of my work below</h4>
