@@ -1,6 +1,4 @@
 TODO:
 -jeopardy helper
 -gitHub links
--About
--static nav bar
 -ReOrganization of files

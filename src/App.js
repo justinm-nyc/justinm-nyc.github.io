@@ -13,7 +13,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <header className="App-header">
+        <header className="App-header sticky-top">
           <CustomNavbar></CustomNavbar>
         </header>
         <div className="">

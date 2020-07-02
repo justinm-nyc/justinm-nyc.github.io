@@ -37,6 +37,13 @@
   color: #009FB7;
 }
 
+.sticky-top {
+  position: fixed;
+  width: 100%;
+  background: white;
+  top: 0;
+}
+
 
 /** About Me **/
 .about p {
