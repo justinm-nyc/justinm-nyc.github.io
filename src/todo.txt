@@ -2,5 +2,5 @@ TODO:
 -jeopardy helper
 -gitHub links
 -About
--Contact Me Button on Home
+-static nav bar
 -ReOrganization of files

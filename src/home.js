@@ -13,12 +13,12 @@ class Home extends Component {
     render() {
         return (
             <div>
-                <div className="content">
+                <div className="content display-flex">
                     <div>
                         <Col className="intro-column">
                             <h1>Hi, I'm Justin.</h1>
                             <h4 className="home-pt-2">I'm a software engineer with experience designing and building user interfaces for web and mobile applications. </h4>
-                            <h4>Want to collaborate? Let's chat</h4>
+                            <h4>Want to collaborate?</h4>
                             <a href="/contact"><Button className="contact-me-button">Contact Me</Button></a>
                         </Col>
                         <Col className="arrow-column">

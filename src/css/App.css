@@ -5,7 +5,6 @@
 .content {
   background-color: #009FB7;
   min-height: 100vh;
-  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -15,6 +14,9 @@
   color: white;
 }
 
+.display-flex{
+  display: flex;
+}
 
 /** Navbar **/
 
@@ -37,38 +39,55 @@
 
 
 /** About Me **/
-.about-div {
-  padding-top: 20px;
+.about p {
+  font-size: 1.5rem;
+}
+
+.about a {
+  color: white;
+  font-style: italic;
 }
 
 .icon-pic {
   max-width: 75%;
+  margin-bottom: 30px;
 }
+
+.about-info {
+  list-style: none;
+  text-align: left;
+}
+
+.about-title {
+  padding-top: 50px;
+  margin: 0 auto;
+}
+
 
 
 /** Home **/
-.home-pt-2{
+.home-pt-2 {
 margin: 50px 0 50px 0;
 }
 
-.content h4{
+.content h4 {
   font-weight: 300;
 }
 
 .intro-column Button{
   margin-top: 30px;
   font-size: 1.25rem;
-  background-color: #009FB7;
-  border-color: white;
-  color: white;
+  background-color: #009FB7!important;
+  border-color: white!important;
+  color: white!important;
 }
 
 .intro-column Button:hover {
   margin-top: 30px;
   font-size: 1.25rem;
-  background-color: #006f80;
-  border-color: white;
-  color: white;
+  background-color: #006f80!important;
+  border-color: white!important;
+  color: white!important;
 }
 
 .intro-column Button:focus,
@@ -76,9 +95,9 @@ margin: 50px 0 50px 0;
 {
   margin-top: 30px;
   font-size: 1.25rem;
-  background-color: #009FB7;
-  border-color: white;
-  color: white;
+  background-color: #009FB7!important;;
+  border-color: white!important;;
+  color: white!important;;
 }
 
 @keyframes bounce { 
@@ -92,7 +111,7 @@ margin: 50px 0 50px 0;
 }
 
 .arrow-column{
-  margin-top: 250px;
+  margin-top: 100px;
 }
 
 .arrow-column h4{
@@ -133,20 +152,20 @@ margin: 50px 0 50px 0;
 
 .expand-button Button{
   margin-bottom: 16px;
-  background-color: #009FB7;
-  border-color: #009FB7;
+  background-color: #009FB7!important;
+  border-color: #009FB7!important;
 }
 
 .expand-button Button:hover{
-  background-color: #006f80;
-  border-color: #006f80;
+  background-color: #006f80!important;
+  border-color: #006f80!important;
 }
 
 .expand-button Button:focus,
 .expand-button Button:active
 {
-  background-color: #009FB7;
-  border-color: #009FB7;
+  background-color: #009FB7!important;
+  border-color: #009FB7!important;
 }
 
 
@@ -236,3 +255,4 @@ div {
   margin: 0 0 10px;
   color: white;
 }
+
