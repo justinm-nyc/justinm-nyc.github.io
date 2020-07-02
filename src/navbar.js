@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar';
+import Resume from './resume/Justin_Martinelli_Technical_Resume.pdf';
 
 class CustomNavbar extends Component {
     render() {
@@ -15,7 +16,7 @@ class CustomNavbar extends Component {
                     <Nav>
                         <Nav.Link className="nav-button" id="nav-button" href="/#work">WORK</Nav.Link>
                         <Nav.Link className="nav-button" id="nav-button" href="about">ABOUT</Nav.Link>
-                        <Nav.Link className="nav-button" id="nav-button" href="resume">RESUME</Nav.Link>
+                        <Nav.Link className="nav-button" id="nav-button" target="_blank" href={Resume}>RESUME</Nav.Link>
                         <Nav.Link className="nav-button" id="nav-button" href="contact">CONTACT</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
