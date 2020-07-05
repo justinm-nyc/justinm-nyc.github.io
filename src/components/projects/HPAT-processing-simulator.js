@@ -15,7 +15,9 @@ class HPATProcessingSimulator extends Component {
             "A user chooses to run transactions on an ATP with healthcare survey data or an ATP for an eCommerce business. The user then has the options of ramp, burst, and steady to choose from as the workload profile over a short period of time. Ramp, burst, and steady represent the pattern of user activity for the enterprise workload (e.g. steady like a slow day, ramp like a normal busy day, burst like a holiday or during peak season). Then the user can choose from 1,500 to 10,000 users that will be inserting, update, and reporting within a short span of time. The results of whether the transactions were successes or failures are then populated in graphs.",
             "Software Engineer\n\nI created the frontend of the application, wrote the artillery script that would run transactions and populate information into the database. I wrote the docker files that ran the server and the client in separate folders. I created the yaml files to deploy the docker images to the Oracle Kubernetes Engine.",
             ['Vue', 'Node','Express','HTML5', 'CSS3', 'Bootstrap','Docker', 'Artillery', 'SQL','Oracle Functions','Oracle Cloud Infrastructure Registry', 'Oracle Autonomous Transaction Processing' ],
-            [screenshot1,screenshot2,screenshot3,screenshot4]
+            [screenshot1,screenshot2,screenshot3,screenshot4],
+            'https://github.com/justinm-nyc/EnterpriseSimulator',
+            'This is the link to the repository of a version of the Enterprise Simulator that is just the frontend and not connected to the backend for propietary reasons.'
         ];
 
         return (

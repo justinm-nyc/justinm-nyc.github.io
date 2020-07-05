@@ -14,7 +14,9 @@ class JeopardyHelper extends Component {
             "The Jeopardy Helper application was created during my time at Oracle in order for the employees to be able to play a jeopardy activity. I created it so that the players on each team could have a buzzer-like application. One person adds their team name to the application and then each player on that respective team selects their team name. Once it is time to answer, they can click the buzzer button and then a list is populated with the teams that buzzed in and their order. The team names and buzzer times are all saved to the database. The application was created so that everyone could go on a website and participate in the game. The application is responsive and so depending on whether it is accessed from a phone or a computer, the appearance changes.",
             "Full Stack Engineer\n\nI created the frontend and the API to communicate with the MongoDB database.",
             ['Vue','Node','Express', 'MongoDB','HTML5','CSS3','Bootstrap'],
-            [screenshot1,screenshot2,screenshot3]
+            [screenshot1,screenshot2,screenshot3],
+            'https://github.com/justinm-nyc/jeapardy-helper',
+            ""
         ];
 
         return (

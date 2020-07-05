@@ -47,6 +47,8 @@ class Project extends Component {
                                 <p>{this.props.valueFromParent[3]}</p>
                                 <h1 className="project-name">Technologies</h1>
                                 <TechnologiesList technologies={this.props.valueFromParent[4]}></TechnologiesList>
+                                <a href={this.props.valueFromParent[6]}><h1 className="project-github-link">GitHub Link</h1></a>
+                                <p>{this.props.valueFromParent[7]}</p>
                             </Col>
                         </Row>
                     </Container>
