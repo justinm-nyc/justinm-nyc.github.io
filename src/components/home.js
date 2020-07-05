@@ -50,21 +50,21 @@ class Projects extends Component {
     const Projects =[
         { 
             name: 'High Performance Autonomous Transaction Processing Simulator',
-            position: 'Full Stack Engineer',
+            position: 'Software Engineer',
             picture: hptaProcesingSimulatorImage,
             link: '/HPAT-processing-simulator'
             
         },
         { 
             name: 'Scientific Imaging Software ',
-            position: 'Full Stack Engineer',
+            position: 'Software Engineer',
             picture: scientificImagingSoftwareImage,
             link: '/scientific-imaging-software'
             
         },
                 { 
             name: 'Jeopardy Helper',
-            position: 'Software Engineer',
+            position: 'Full Stack Engineer',
             picture: jeopardyHelperImage,
             link: '/jeopardy-helper'
             
