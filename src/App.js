@@ -3,9 +3,9 @@ import CustomNavbar from './components/navbar.js';
 import About from './components/about.js';
 import Contact from './components/contact.js';
 import Home from './components/home.js';
-import ScientificImagingSoftware from './projects/scientific-imaging-software.js';
-import HPATProcessingSimulator from './projects/HPAT-processing-simulator.js';
-import JeopardyHelper from './projects/jeopardy-helper.js';
+import ScientificImagingSoftware from './components/projects/scientific-imaging-software.js';
+import HPATProcessingSimulator from './components/projects/HPAT-processing-simulator.js';
+import JeopardyHelper from './components/projects/jeopardy-helper.js';
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import './css/App.css';
 

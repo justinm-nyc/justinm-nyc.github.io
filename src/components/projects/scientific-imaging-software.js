@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import Project from '../project.js';
-import screenshot1 from './images/scientific-imaging-screenshots/screenshot1.png';
-import screenshot2 from './images/scientific-imaging-screenshots/screenshot2.png';
-import screenshot3 from './images/scientific-imaging-screenshots/screenshot3.png';
-import screenshot4 from './images/scientific-imaging-screenshots/screenshot4.png';
+import screenshot1 from './scientific-imaging-screenshots/screenshot1.png';
+import screenshot2 from './scientific-imaging-screenshots/screenshot2.png';
+import screenshot3 from './scientific-imaging-screenshots/screenshot3.png';
+import screenshot4 from './scientific-imaging-screenshots/screenshot4.png';
 
 class ScientificImagingSoftware extends Component {
 
