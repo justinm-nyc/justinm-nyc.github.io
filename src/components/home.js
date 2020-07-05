@@ -5,9 +5,9 @@ import Image from 'react-bootstrap/Image';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
-import arrowButton from './images/arrow-down-circle.svg';
-import scientificImagingSoftwareImage from './images/scientific-imaging-screenshots/screenshot1.png';
-import hptaProcesingSimulatorImage from './images/hpat-processing-simulator-screenshots/screenshot1.png';
+import arrowButton from '../images/arrow-down-circle.svg';
+import scientificImagingSoftwareImage from '../images/scientific-imaging-screenshots/screenshot1.png';
+import hptaProcesingSimulatorImage from '../images/hpat-processing-simulator-screenshots/screenshot1.png';
 
 class Home extends Component {
     render() {

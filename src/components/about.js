@@ -1,7 +1,7 @@
 import React,  { Component } from 'react';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
-import thumbnailPic from './images/justin-m-icon-pic.jpg';
+import thumbnailPic from '../images/justin-m-icon-pic.jpg';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 

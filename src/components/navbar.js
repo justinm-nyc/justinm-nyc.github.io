@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar';
-import Resume from './resume/Justin_Martinelli_Technical_Resume.pdf';
+import Resume from '../resume/Justin_Martinelli_Technical_Resume.pdf';
 
 class CustomNavbar extends Component {
     render() {
